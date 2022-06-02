@@ -1,0 +1,208 @@
+@keyframes bounce {
+            
+        0%, 20%, 40%, 60%, 100%{
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+        40% {
+            -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+        }
+        80% {
+            -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+        }
+    
+    }
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #323730;
+}
+
+
+.content2 label{
+    font-size: 14px;
+}
+
+.content2 input::placeholder{
+    font-size: 14px;
+    color: #ABB3A8
+}
+
+a{
+    color: #1DB9E0;
+    text-decoration: none;
+}
+a:hover{
+    color: #166a81;
+    text-decoration: none;
+}
+
+
+.terms a{
+    text-decoration: underline;
+
+}
+.terms a:hover{
+    color: #166a81;
+    text-decoration: underline;
+}
+
+h1{
+    color: #3F3D56;
+    font-size: 37px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 68px;
+    margin-bottom: 31px;
+}
+
+.e-mail, .password,.cpassword, .name{
+    display: flex;    
+    flex-direction: column;
+    margin-bottom: 33px;
+}
+
+#E-mail{
+    border-color: crimson;
+    box-shadow: 0px 0px 3px crimson;
+}
+
+#E-mail:focus{
+    outline: none;
+}
+
+#E-mail:focus:invalid{
+    box-shadow: none;
+}
+
+
+label{
+    margin-bottom: 6px;
+}
+
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.keep-conected input, .terms input{
+    margin-right: 15px;
+    
+}
+
+.terms{
+    font-size: 14px;
+    margin-bottom: 28px;
+    display: flex;
+   
+}
+
+.content2 span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    width: 515px;    
+}
+
+.content2{
+    width: 396px;    
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    margin-bottom: 174px;
+}
+
+.submit, .efeito{
+    margin-bottom: 32px;
+    width: 100%;
+    font-size: 16px;
+}
+
+
+.content span{
+    display: flex;
+    justify-content: center;
+        
+}
+
+.submit, .efeito{
+    background-color: #3F3D56;
+    color:#FFFFFF;
+    padding: 14px;
+    border-style: none;
+}
+
+input, select{
+    padding:16px;
+    border: 1px solid;
+    border-color: #ABB3A8;
+}
+
+
+input[type=checkbox] {
+    position: relative;
+      cursor: pointer;
+      vertical-align: middle;
+}
+
+input[type=checkbox]:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 0;
+    left: 0;
+    background-color:#FFFFFF;
+    border: 1px solid;
+    border-color: #ABB3A8;
+}
+input[type=checkbox]:checked:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 0;
+    left: 0;
+    background-color:#1E80EF;
+}
+input[type=checkbox]:checked:after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 2px;
+    left: 6px;
+}
+
+.efeito {
+    background: #f18f01;
+}
+
+.efeito:hover {
+    animation: bounce 1s;
+}

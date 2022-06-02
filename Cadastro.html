@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form>
+        <div class="content2">
+            <h1>Faça seu cadastro</h1>
+            <div class="name">
+                <label for="Name">Nome completo</label>
+                <input type="text" id="Name" placeholder="Digite seu nome completo">
+            </div>
+
+            <div class="e-mail">
+                <label for="E-mail">E-mail</label>
+                <input onblur="validarEmail()" type="text" id="E-mail" placeholder="Digite seu e-mail" >
+                <span id="error-email"></span>
+            </div>
+
+            <div class="password">
+                <label for="Senha">Senha</label>
+                <input type="password" id="Senha" placeholder="Crie uma senha">
+            </div>
+
+            <div class="cpassword">
+                <label for="Confirme-senha">Confirme sua senha</label>
+                <input type="password" id="Confirme-senha" placeholder="Confirmar senha">
+            </div>
+
+            <div class="terms">
+                <div class="terms-checkbox">
+                    <input type="checkbox" id="Termos">
+                </div>
+                <div class="terms-label">
+                    <label for="Termos">
+                        Aceito os termos e condições e concordo com as <a href="#">políticas de
+                            privacidade</a>
+                    </label>
+                </div>
+            </div>
+
+            <button class="efeito submit" type="Cadastrar">Cadastrar</button>
+
+        </div>
+    </form>
+    <script src="index.js"></script>
+</body>
+
+</html>
